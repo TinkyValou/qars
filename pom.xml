@@ -1,15 +1,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+
 	<groupId>fr.ensma.lias</groupId>
 	<artifactId>qarscore</artifactId>
 	<version>0.1-SNAPSHOT</version>
+
 	<description>Query-and-Relax System (QaRS) is designed to facilitate the exploitation of large knowledge bases.</description>
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<jena.version>3.0.0</jena.version>
-		<junit.version>4.12</junit.version>
 		<combinatoricslib.version>2.1</combinatoricslib.version>
 		<roaringbitmap.version>0.5.9</roaringbitmap.version>
 		<sesame.version>4.0.0</sesame.version>
@@ -17,40 +18,7 @@
 		<maven.resources.version>2.6</maven.resources.version>
 		<maven.compiler.version>3.1</maven.compiler.version>
 	</properties>
-	<developers>
-		<developer>
-			<id>baronm</id>
-			<name>BARON Mickaël</name>
-			<email>baron@ensma.fr</email>
-			<organization>LIAS / ENSMA</organization>
-			<url>http://www.lias-lab.fr/members/mickaelbaron</url>
-			<roles>
-				<role>Integrator</role>
-			</roles>
-		</developer>
-		<developer>
-			<id>fokoug</id>
-			<name>FOKOU Géraud</name>
-			<email>geraud.fokou@ensma.fr</email>
-			<organization>LIAS / ENSMA</organization>
-			<url>http://www.lias-lab.fr/members/geraudfokou</url>
-			<roles>
-				<role>Leader</role>
-				<role>Developer</role>
-			</roles>
-		</developer>
-		<developer>
-			<id>jeans</id>
-			<name>JEAN Stéphane</name>
-			<email>jean@ensma.fr</email>
-			<organization>LIAS / ENSMA</organization>
-			<url>http://www.lias-lab.fr/members/stephanejean</url>
-			<roles>
-				<role>Leader</role>
-				<role>Developer</role>
-			</roles>
-		</developer>
-	</developers>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.jena</groupId>
@@ -69,10 +37,9 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>${junit.version}</version>
-			<scope>test</scope>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
 		</dependency>
 		<dependency>
 			<groupId>com.googlecode.combinatoricslib</groupId>
